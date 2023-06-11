@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,56 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+.cell-content {
+  white-space: nowrap; /* Prevent content from wrapping */
+  overflow: hidden; /* Hide overflowed content */
+  text-overflow: ellipsis; /* Display ellipsis (...) for overflowed content */
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-bottom: 1px solid #eee;
+  box-sizing: border-box;
+}
+
+.sticky {
+  position: sticky !important; 
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-bottom: 1px solid #eee;
+  box-sizing: border-box;
+}
+
+
+.Grid {
+  position: relative;
+  overflow: hidden;
+}
+
+.WindowGrid {
+  display: grid;
+  position: relative;
+  overflow: auto;
+  outline: none;
+}
+
+.Cell {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+}
+
+.FixedColumn {
+  background-color: lightgray;
+  z-index: 1;
+}
+
+.FixColumn{
+  left: 90 !important;
 }
