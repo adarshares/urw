@@ -1,0 +1,41 @@
+.grid-container {
+  overflow: hidden !important;
+}
+
+.header-container {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.column-container {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.header-grid {
+  overflow: hidden !important;
+}
+
+.content-container {
+  overflow-x: scroll;
+  overflow-y: scroll;
+  overflow: hidden;
+}
+
+.soc {
+  position: sticky !important;
+  left: 0;
+  z-index: 2;
+}
+
+.sor {
+  position: sticky !important;
+  top: 0;
+  z-index: 1;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
